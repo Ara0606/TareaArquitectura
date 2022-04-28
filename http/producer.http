@@ -1,0 +1,23 @@
+POST http://localhost:8080/v1/api/producer
+Content-Type: application/json
+
+{
+  "message": "hi world"
+}
+###
+POST http://localhost:8080/v1/api/producer/fanout
+Content-Type: application/json
+
+{
+"message": "hola mundo desde fanout"
+}
+
+###
+POST http://localhost:8080/v1/api/producer/topic
+Content-Type: application/json
+
+{
+  "message": "hola mundo desde topic"
+}
+
+###
